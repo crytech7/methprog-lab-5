@@ -46,7 +46,7 @@ class CMD_history(Command):
 
 class CMD_exit(Command):
 	def execute(self):
-		raise Terminator("[INFO]: SEE YOU")
+		raise Terminator("[INFO]: SEE YOU\n")
 
 	def name(self):
 		return "exit"
@@ -54,10 +54,10 @@ class CMD_exit(Command):
 
 class CMD_uptime(Command):
 	def execute(self):
-		stdout.write("[ INFO ]: \"uptime\" command\n")
+		stdout.write("[ INFO ]: \"purr\" command\n")
 
 	def cancel(self):
-		stdout.write("[ INFO ]: canceled \"uptime\" command\n")
+		stdout.write("[ INFO ]: canceled \"purr\" command\n")
 	
 	def name(self):
 		return "uptime"

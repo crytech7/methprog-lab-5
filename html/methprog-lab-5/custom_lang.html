@@ -74,7 +74,7 @@ class CMD_history(Command):
 
 class CMD_exit(Command):
         def execute(self):
-                raise Terminator(&#34;[INFO]: SEE YOU&#34;)
+                raise Terminator(&#34;[INFO]: SEE YOU\n&#34;)
 
         def name(self):
                 return &#34;exit&#34;
@@ -82,10 +82,10 @@ class CMD_exit(Command):
 
 class CMD_uptime(Command):
         def execute(self):
-                stdout.write(&#34;[ INFO ]: \&#34;uptime\&#34; command\n&#34;)
+                stdout.write(&#34;[ INFO ]: \&#34;purr\&#34; command\n&#34;)
 
         def cancel(self):
-                stdout.write(&#34;[ INFO ]: canceled \&#34;uptime\&#34; command\n&#34;)
+                stdout.write(&#34;[ INFO ]: canceled \&#34;purr\&#34; command\n&#34;)
         
         def name(self):
                 return &#34;uptime&#34;
@@ -209,7 +209,7 @@ if __name__ == &#34;__main__&#34;: main()</code></pre>
 </summary>
 <pre><code class="python">class CMD_exit(Command):
         def execute(self):
-                raise Terminator(&#34;[INFO]: SEE YOU&#34;)
+                raise Terminator(&#34;[INFO]: SEE YOU\n&#34;)
 
         def name(self):
                 return &#34;exit&#34;</code></pre>
@@ -230,7 +230,7 @@ if __name__ == &#34;__main__&#34;: main()</code></pre>
 <span>Expand source code</span>
 </summary>
 <pre><code class="python">def execute(self):
-        raise Terminator(&#34;[INFO]: SEE YOU&#34;)</code></pre>
+        raise Terminator(&#34;[INFO]: SEE YOU\n&#34;)</code></pre>
 </details>
 </dd>
 <dt id="methprog-lab-5.custom_lang.CMD_exit.name"><code class="name flex">
@@ -441,10 +441,10 @@ if __name__ == &#34;__main__&#34;: main()</code></pre>
 </summary>
 <pre><code class="python">class CMD_uptime(Command):
         def execute(self):
-                stdout.write(&#34;[ INFO ]: \&#34;uptime\&#34; command\n&#34;)
+                stdout.write(&#34;[ INFO ]: \&#34;purr\&#34; command\n&#34;)
 
         def cancel(self):
-                stdout.write(&#34;[ INFO ]: canceled \&#34;uptime\&#34; command\n&#34;)
+                stdout.write(&#34;[ INFO ]: canceled \&#34;purr\&#34; command\n&#34;)
         
         def name(self):
                 return &#34;uptime&#34;</code></pre>
@@ -465,7 +465,7 @@ if __name__ == &#34;__main__&#34;: main()</code></pre>
 <span>Expand source code</span>
 </summary>
 <pre><code class="python">def cancel(self):
-        stdout.write(&#34;[ INFO ]: canceled \&#34;uptime\&#34; command\n&#34;)</code></pre>
+        stdout.write(&#34;[ INFO ]: canceled \&#34;purr\&#34; command\n&#34;)</code></pre>
 </details>
 </dd>
 <dt id="methprog-lab-5.custom_lang.CMD_uptime.execute"><code class="name flex">
@@ -478,7 +478,7 @@ if __name__ == &#34;__main__&#34;: main()</code></pre>
 <span>Expand source code</span>
 </summary>
 <pre><code class="python">def execute(self):
-        stdout.write(&#34;[ INFO ]: \&#34;uptime\&#34; command\n&#34;)</code></pre>
+        stdout.write(&#34;[ INFO ]: \&#34;purr\&#34; command\n&#34;)</code></pre>
 </details>
 </dd>
 <dt id="methprog-lab-5.custom_lang.CMD_uptime.name"><code class="name flex">
