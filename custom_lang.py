@@ -60,7 +60,7 @@ class CMD_uptime(Command):
 		stdout.write("[ INFO ]: canceled \"purr\" command\n")
 	
 	def name(self):
-		return "uptime"
+		return "purr"
 
 
 class CMD_undo(Command):
